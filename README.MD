@@ -1,12 +1,13 @@
-An algorithm for asymmetric encryption, simply means we have a public key and a private key for encryption and decryption instead of one key for both encryption and decryption.
-
-Basic knowledge
+### Basic knowledge
 -----------------------
-Modular operations
+- Modular operations: Modular operations are mathematical operations that involve the modulus of a number. The modulus is the remainder when dividing one number by another.
 
-Prime numbers: Numbers divisible by 1 and Itself.
+- Prime numbers: Numbers divisible by 1 and Itself.
 
-Greatest common divisor
+- Greatest common divisor: The greatest common divisor of two or more integers is the largest positive integer that divides each of the integers without a remainder. 
+        For example:
+    The GCD of 8 and 12 is 4 because 4 is the largest number that divides both 8 and 12 evenly.
+    The GCD of 18 and 24 is 6 because 6 is the largest number that divides both 18 and 24 evenly.
 
 How Encryption and Decryption works
 ---------------------------------------
