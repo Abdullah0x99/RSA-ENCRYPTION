@@ -12,17 +12,18 @@ How Encryption and Decryption works
 ---------------------------------------
 Let's say John wants to send a message to Phillips and doesn't want Gabriel to see what's written in the message, then we'll have to encrypt the message in a way that only John and Phillips can know what the message says.
 So what John will do is encrypt the message:
-let's say c= ciphertext, E = Enrypt, m = message, D = Decrypt
+let's say c= ciphertext, e = Enrypt, m = message, d = Decrypt
 
-So John will use the function E(m) = c to encrypt the message into a ciphertext so anyone listening can't understand what the message says. Where E is the encryption algorithm being used and m is the message being encrypted and c is the ciphertext.
+So John will use the function e(m) = c to encrypt the message into a ciphertext so anyone listening can't understand what the message says. Where e is the encryption algorithm being used and m is the message being encrypted and c is the ciphertext.
 
-Then Phillip will use the function D(c) = m to Decrypt the message where D is equal to the decryption algorithm being used and c is the cipher-text being decrypted and m is the message that was sent by John.
+Then Phillip will use the function d(c) = m to Decrypt the message where d is equal to the decryption algorithm being used and c is the cipher-text being decrypted and m is the message that was sent by John.
 
-How Symmetric Encryption works
+How Symmetric Encryption Works
 --------------------------------
-This will be John and Phillips both having a shared secret key, let's call it K, then John can encrypt the message by using the function E(K,m) = c. Where E is the encryption algorithm being used and K is the secret key and m is the message being encrypted and c is the ciphertext.
+This will be John and Phillips both having a shared secret key, let's call it K, then John can encrypt the message by using the function e(K,m) = c. 
+Where E is the encryption algorithm being used and K is the secret key and m is the message being encrypted and c is the ciphertext.
 
-To decrypt the ciphertext that was sent to John, Phillips will have to use the function D(K,c) = m. Where D is the decryption algorithm being used and K is the shared private key and c is the cipher-text being decrypted and m is the message.
+To decrypt the ciphertext that was sent to John, Phillips will have to use the function d(K,c) = m. Where d is the decryption algorithm being used and K is the shared private key and c is the cipher-text being decrypted and m is the message.
 
 How Asymmetric Encryption Works
 --------------------------------
@@ -30,9 +31,9 @@ This method involves both the sender and receiver having a key pair(Public key a
 
 The main getaway here is whenever John wants to send a message to Phillips, he encrypts the message with Phillips public key using the function E(PubK.Ph, m) = c. Where E is the encryption algorithm, PubK is the Public key, Ph is Phillips, m is the message and c is the ciphertext.
 
-For Philiphs to decrypt the cipher text, he'll do that using his private key using the decryption function D(PriK.Ph, c) = m. Where D is the decryption function, PriK is the private key, Ph is Phillips, c is the ciphertext, and m is the message.
+For Philiphs to decrypt the cipher text, he'll do that using his private key using the decryption function D(PriK.Ph, c) = m. Where d is the decryption function, PriK is the private key, Ph is Phillips, c is the ciphertext, and m is the message.
 
-Using Asymmetric encryption, the only way to decrypt a cipher-text is by using the receiver private key(in our case, Phillips private key)
+Using Asymmetric encryption, the only way to decrypt a cipher-text is by using the receiver's private key(in our case, Phillips private key)
 
 Also if John wants to send a clear text message to Phillips and wants Phillips to know that the message came from him without any alteration to the message, John needs to add a signature to the message using his private key then Phillips will use John's Public key to verify that the message came from John. 
 
