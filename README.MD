@@ -98,7 +98,7 @@ NB: We are using small prime numbers for the sake of understanding this tutorial
 
 How do we use these keys to Encrypt and decrypt messages?
 --------------------------------------------------------
-Let's say Phillips wants to send an encrypted message(m = 15) to John.
+Let's say Phillips wants to send an encrypted message (m = 15) to John.
 
 Phillip applies the encryption formula c = m^e mod n; where c is the cipher text, m is the message and e is the public key.
 Remember, Phillips knows the value of 
